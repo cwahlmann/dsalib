@@ -1,2 +1,2 @@
-# dsalib
-Eine Bibliothek für das Regelwerk DSA 4.1
+# pnplib
+Eine Bibliothek für das Regelwerk 4.1
