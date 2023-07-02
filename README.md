@@ -1,2 +1,2 @@
-# penandpaperlib
-Eine Bibliothek für das PNP-Regelwerk 4.1
+# dsalib
+Eine Bibliothek für das DSA-Regelwerk 4.1
