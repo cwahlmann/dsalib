@@ -32,7 +32,7 @@ public enum Kampftechnik {
     WURFMESSER_TECHNIK("Wurfmesser", FERNKAMPF, BASIS, C, eBE(-3)),
     WURFSPEERE("Wurfspeere", FERNKAMPF, SPEZIAL, C, eBE(-2)),
     ZWEIHANDFLEGEL("Zweihandflegel", BEW_NAHKAMPF, SPEZIAL, D, eBE(-3)),
-    ZEIHANDHIEBWAFFEN("Zweihandhiebwaffen", BEW_NAHKAMPF, SPEZIAL, D, eBE(-3)),
+    ZWEIHANDHIEBWAFFEN("Zweihandhiebwaffen", BEW_NAHKAMPF, SPEZIAL, D, eBE(-3)),
     ZWEIHANDSCHWERTER_SAEBEL("Zweihandschwerter- und säbel", BEW_NAHKAMPF, SPEZIAL, E, eBE(-2)),
     IMPROVISIERT("Improvisiert", FERNKAMPF, BASIS, C, eBE(0)),
     ;

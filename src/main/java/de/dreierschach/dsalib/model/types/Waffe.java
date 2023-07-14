@@ -14,16 +14,16 @@ public enum Waffe {
     // **** NAHKAMPFWAFFEN
 
     // Anderthalbhänder
-    ANDERTHALBHAENDER("Anderthalbhänder", ANDERTHALBHAENDER_TECHNIK, tp(5), tpKK(11, 4), 100, 115, 1, 1, 150, wm(0, 0), bem(Z), dk(N, S)),
-    BASTARDSCHWERT_ANDERTHALBHAENDER("Bastardschwert (als Anderthalbhänder)", ANDERTHALBHAENDER_TECHNIK, tp(5), tpKK(11, 3), 120, 110, 2, 0, 200, wm(0, -1), bem(Z), dk(N)),
-    NACHTWIND("Nachtwind", ANDERTHALBHAENDER_TECHNIK, tp(4), tpKK(11, 5), 70, 100, 0, 2, 500, wm(0, 0), bem(Z), dk(N)),
-    RONDRAKAMM("Rondrakamm", ANDERTHALBHAENDER_TECHNIK, tp(2, 2), tpKK(12, 3), 130, 130, 1, 0, 0, wm(0, 0), bem(Z, P), dk(N, S)),
-    TUZAKMESSER("Tuzakmesser", ANDERTHALBHAENDER_TECHNIK, tp(6), tpKK(12, 4), 100, 130, 1, 1, 400, wm(0, 0), bem(Z), dk(N, S)),
+    ANDERTHALBHAENDER("Anderthalbhänder", ANDERTHALBHAENDER_TECHNIK, tp(5), tpKK(11, 4), 100, 115, 1, 1, 150, wm(0, 0), bem(z), dk(N, S)),
+    BASTARDSCHWERT_ANDERTHALBHAENDER("Bastardschwert (als Anderthalbhänder)", ANDERTHALBHAENDER_TECHNIK, tp(5), tpKK(11, 3), 120, 110, 2, 0, 200, wm(0, -1), bem(z), dk(N)),
+    NACHTWIND("Nachtwind", ANDERTHALBHAENDER_TECHNIK, tp(4), tpKK(11, 5), 70, 100, 0, 2, 500, wm(0, 0), bem(z), dk(N)),
+    RONDRAKAMM("Rondrakamm", ANDERTHALBHAENDER_TECHNIK, tp(2, 2), tpKK(12, 3), 130, 130, 1, 0, 0, wm(0, 0), bem(z, p), dk(N, S)),
+    TUZAKMESSER("Tuzakmesser", ANDERTHALBHAENDER_TECHNIK, tp(6), tpKK(12, 4), 100, 130, 1, 1, 400, wm(0, 0), bem(z), dk(N, S)),
 
     // Dolche
     BASILISKENZUNGE("Basiliskenzunge", DOLCHE, tp(2), tpKK(12, 4), 25, 30, 4, -1, 70, wm(0, -1), bem(), dk(H)),
-    BORNDORN_DOLCH("Borndorn (als Dolch)", DOLCHE, tp(2), tpKK(12, 5), 30, 40, 1, 0, 40, wm(0, -1), bem(W), dk(H)),
-    DOLCH("Dolch", DOLCHE, tp(1), tpKK(12, 5), 20, 30, 2, 0, 20, wm(0, -1), bem(W_), dk(H)),
+    BORNDORN_DOLCH("Borndorn (als Dolch)", DOLCHE, tp(2), tpKK(12, 5), 30, 40, 1, 0, 40, wm(0, -1), bem(w), dk(H)),
+    DOLCH("Dolch", DOLCHE, tp(1), tpKK(12, 5), 20, 30, 2, 0, 20, wm(0, -1), bem(w_), dk(H)),
     DRACHENZAHN("Drachenzahn", DOLCHE, tp(2), tpKK(11, 4), 40, 40, 0, 0, 120, wm(0, 0), bem(), dk(H)),
     EBERFAENGER("Eberfänger", DOLCHE, tp(2), tpKK(12, 4), 40, 40, 1, 0, 60, wm(0, -1), bem(), dk(H)),
     HAKENDOLCH("Hakendolch", DOLCHE, tp(1), tpKK(12, 4), 50, 60, -2, 0, 90, wm(0, 1), bem(), dk(H, N)),
@@ -32,14 +32,14 @@ public enum Waffe {
     LANGDOLCH_DOLCHE("Langdolch", DOLCHE, tp(2), tpKK(12, 4), 30, 40, 1, 0, 45, wm(0, 0), bem(), dk(H)),
     LINKHAND("Linkhand", DOLCHE, tp(1), tpKK(12, 5), 30, 30, 0, 0, 90, wm(0, 1), bem(), dk(H)),
     MENGBILAR("Mengbilar", DOLCHE, tp(1), tpKK(12, 5), 20, 25, 7, -2, 200, wm(0, -3), bem(), dk(H)),
-    MESSER("Messer", DOLCHE, tp(0), tpKK(12, 6), 10, 25, 4, -2, 10, wm(-2, -3), bem(I), dk(H)),
+    MESSER("Messer", DOLCHE, tp(0), tpKK(12, 6), 10, 25, 4, -2, 10, wm(-2, -3), bem(i), dk(H)),
     OGERFAENGER("Ogerfänger", DOLCHE, tp(2), tpKK(12, 4), 35, 35, 4, 0, 150, wm(0, -2), bem(), dk(H)),
     SCHEIBENDOLCH("Scheibendolch", DOLCHE, tp(2), tpKK(11, 4), 40, 45, 0, 0, 60, wm(0, -3), bem(), dk(H)),
     SCHWERER_DOLCH("Schwerer Dolch", DOLCHE, tp(2), tpKK(12, 4), 30, 35, 1, 0, 40, wm(0, -1), bem(), dk(H)),
-    VULKANGLASDOLCH("Vulkanglasdolch", DOLCHE, tp(-1), tpKK(12, 5), 30, 30, 6, -2, 0, wm(-2, -3), bem(I), dk(H)),
+    VULKANGLASDOLCH("Vulkanglasdolch", DOLCHE, tp(-1), tpKK(12, 5), 30, 30, 6, -2, 0, wm(-2, -3), bem(i), dk(H)),
     WAQQIF("Waqqif", DOLCHE, tp(2), tpKK(12, 5), 35, 45, 2, -2, 60, wm(-1, -3), bem(), dk(H)),
-    WURFDOLCH_DOLCH("Wurfdolch (als Dolch)", DOLCHE, tp(1), tpKK(12, 5), 20, 25, 2, -1, 30, wm(-1, -2), bem(W, I_), dk(H)),
-    WURFMESSER_DOLCH("Wurfmesser (als Dolch)", DOLCHE, tp(-1), tpKK(12, 6), 10, 20, 2, -1, 15, wm(-2, -3), bem(W, I_), dk(H)),
+    WURFDOLCH_DOLCH("Wurfdolch (als Dolch)", DOLCHE, tp(1), tpKK(12, 5), 20, 25, 2, -1, 30, wm(-1, -2), bem(w, i_), dk(H)),
+    WURFMESSER_DOLCH("Wurfmesser (als Dolch)", DOLCHE, tp(-1), tpKK(12, 6), 10, 20, 2, -1, 15, wm(-2, -3), bem(w, i_), dk(H)),
 
     // Fechtwaffen
     DEGEN("Degen", FECHTWAFFEN, tp(3), tpKK(12, 5), 40, 90, 3, 2, 150, wm(0, -1), bem(), dk(N)),
@@ -54,12 +54,12 @@ public enum Waffe {
 
     // Hiebwaffen
     BACCANAQ_BAKKA("Baccanaq / Bakka", HIEBWAFFEN, tp(4), tpKK(12, 4), 80, 80, 5, -1, 180, wm(0, -2), bem(), dk(N)),
-    BEIL("Beil", HIEBWAFFEN, tp(3), tpKK(11, 4), 70, 50, 5, -1, 20, wm(-1, -2), bem(I), dk(N)),
+    BEIL("Beil", HIEBWAFFEN, tp(3), tpKK(11, 4), 70, 50, 5, -1, 20, wm(-1, -2), bem(i), dk(N)),
     BRABAKBENGEL("Brabakbengel", HIEBWAFFEN, tp(5), tpKK(13, 3), 120, 90, 1, 0, 100, wm(0, -1), bem(), dk(N)),
     BYAKKA("Byakka", HIEBWAFFEN, tp(5), tpKK(14, 2), 130, 100, 3, -1, 90, wm(0, -1), bem(), dk(N)),
-    FACKEL("Fackel", HIEBWAFFEN, tp(0), tpKK(11, 5), 30, 50, 8, -2, 0.5, wm(-2, -3), bem(I), dk(H, N)),
-    FLEICHERBEIL("Fleischerbeil", HIEBWAFFEN, tp(2), tpKK(11, 4), 60, 30, 2, -1, 20, wm(-2, -3), bem(I), dk(H)),
-    HAUMESSER("Haumesser", HIEBWAFFEN, tp(3), tpKK(13, 3), 90, 50, 3, -1, 40, wm(0, -2), bem(I), dk(H, N)),
+    FACKEL("Fackel", HIEBWAFFEN, tp(0), tpKK(11, 5), 30, 50, 8, -2, 0.5, wm(-2, -3), bem(i), dk(H, N)),
+    FLEICHERBEIL("Fleischerbeil", HIEBWAFFEN, tp(2), tpKK(11, 4), 60, 30, 2, -1, 20, wm(-2, -3), bem(i), dk(H)),
+    HAUMESSER("Haumesser", HIEBWAFFEN, tp(3), tpKK(13, 3), 90, 50, 3, -1, 40, wm(0, -2), bem(i), dk(H, N)),
     KEULE("Keule", HIEBWAFFEN, tp(2), tpKK(11, 3), 100, 80, 3, 0, 15, wm(0, -2), bem(), dk(N)),
     KNOCHENKEULE("Knochenkeule", HIEBWAFFEN, tp(3), tpKK(11, 3), 110, 100, 3, 0, 0, wm(0, -1), bem(), dk(N)),
     KNUEPPEL("Knüppel", HIEBWAFFEN, tp(1), tpKK(11, 4), 60, 80, 6, 0, 1, wm(0, -2), bem(), dk(N)),
@@ -68,34 +68,34 @@ public enum Waffe {
     MOLOKDESCHNAJA("Molokdeschnaja", HIEBWAFFEN, tp(4), tpKK(11, 3), 100, 100, 3, 0, 90, wm(0, 0), bem(), dk(N)),
     ORKNASE("Orknase", HIEBWAFFEN, tp(5), tpKK(13, 3), 110, 100, 4, -1, 75, wm(0, -1), bem(), dk(N)),
     RABENSCHNABEL("Rabenschnabel", HIEBWAFFEN, tp(4), tpKK(10, 4), 90, 110, 3, 0, 130, wm(0, 0), bem(), dk(N)),
-    SCHMIEDEHAMMER("Schmiedehammer", HIEBWAFFEN, tp(4), tpKK(14, 2), 150, 90, 1, -1, 0, wm(-1, -1), bem(P), dk(N)),
-    SICHEL("Sichel", HIEBWAFFEN, tp(2), tpKK(12, 5), 30, 50, 6, -1, 25, wm(-2, -2), bem(I), dk(H)),
+    SCHMIEDEHAMMER("Schmiedehammer", HIEBWAFFEN, tp(4), tpKK(14, 2), 150, 90, 1, -1, 0, wm(-1, -1), bem(p), dk(N)),
+    SICHEL("Sichel", HIEBWAFFEN, tp(2), tpKK(12, 5), 30, 50, 6, -1, 25, wm(-2, -2), bem(i), dk(H)),
     SKRAJA("Skraja", HIEBWAFFEN, tp(3), tpKK(11, 3), 90, 70, 4, 0, 50, wm(0, 0), bem(), dk(N)),
-    SONNENZEPTER("Sonnenzepter", HIEBWAFFEN, tp(3), tpKK(12, 3), 90, 70, 1, 0, 0, wm(-1, -1), bem(P), dk(N)),
+    SONNENZEPTER("Sonnenzepter", HIEBWAFFEN, tp(3), tpKK(12, 3), 90, 70, 1, 0, 0, wm(-1, -1), bem(p), dk(N)),
     STREITAXT("Streitaxt", HIEBWAFFEN, tp(4), tpKK(13, 2), 120, 90, 2, 0, 50, wm(0, -1), bem(), dk(N)),
     STREITKOLBEN("Streitkolben", HIEBWAFFEN, tp(4), tpKK(11, 3), 120, 75, 1, 0, 50, wm(0, -1), bem(), dk(N)),
-    STUHLBEIN("Stuhlbein", HIEBWAFFEN, tp(0), tpKK(11, 5), 40, 40, 8, -1, 0, wm(-1, -1), bem(I), dk(H, N)),
-    WURFBEIL_HIEBWAFFE("Wurfbeil (als Hiebwaffe)", HIEBWAFFEN, tp(3), tpKK(10, 4), 50, 40, 2, -1, 35, wm(0, -2), bem(W, I_), dk(H)),
-    WURFKEULE_HIEBWAFFE("Wurfkeule (als Hiebwaffe)", HIEBWAFFEN, tp(2), tpKK(12, 5), 35, 40, 3, -1, 18, wm(-1, -1), bem(W, I_), dk(H)),
+    STUHLBEIN("Stuhlbein", HIEBWAFFEN, tp(0), tpKK(11, 5), 40, 40, 8, -1, 0, wm(-1, -1), bem(i), dk(H, N)),
+    WURFBEIL_HIEBWAFFE("Wurfbeil (als Hiebwaffe)", HIEBWAFFEN, tp(3), tpKK(10, 4), 50, 40, 2, -1, 35, wm(0, -2), bem(w, i_), dk(H)),
+    WURFKEULE_HIEBWAFFE("Wurfkeule (als Hiebwaffe)", HIEBWAFFEN, tp(2), tpKK(12, 5), 35, 40, 3, -1, 18, wm(-1, -1), bem(w, i_), dk(H)),
     ZWERGENSKRAJA("Zwergenskraja", HIEBWAFFEN, tp(3), tpKK(11, 3), 80, 60, 1, 0, 100, wm(0, 0), bem(), dk(H, N)),
 
     // Infanteriewaffen
-    GLEFE("Glefe", INFANTERIEWAFFEN, tp(4), tpKK(13, 3), 120, 200, 5, -1, 45, wm(0, -2), bem(Z), dk(S)),
-    HAKENSPIESS("Hakenspieß", INFANTERIEWAFFEN, tp(3), tpKK(13, 4), 120, 250, 5, 0, 70, wm(-1, -1), bem(Z), dk(S)),
-    HELLEBARDE("Hellebarde", INFANTERIEWAFFEN, tp(5), tpKK(12, 3), 150, 200, 5, 0, 75, wm(0, -1), bem(Z), dk(S)),
-    KORSPIESS("Korspieß", INFANTERIEWAFFEN, tp(2, 2), tpKK(12, 3), 140, 180, 3, 0, 200, wm(0, -1), bem(Z, P), dk(S)),
-    NEETHANER_LANGAXT("Neethaner Langaxt", INFANTERIEWAFFEN, tp(2, 2), tpKK(13, 4), 160, 180, 5, -1, 160, wm(-1, -3), bem(Z), dk(S)),
-    PAILOS("Pailos", INFANTERIEWAFFEN, tp(2, 4), tpKK(14, 2), 180, 175, 3, -2, 300, wm(-1, -3), bem(Z), dk(S)),
-    PARTISANE("Partisane", INFANTERIEWAFFEN, tp(5), tpKK(13, 3), 150, 200, 4, 0, 80, wm(0, -2), bem(Z), dk(S)),
-    SCHNITTER("Schnitter", INFANTERIEWAFFEN, tp(5), tpKK(14, 4), 90, 130, 4, 0, 120, wm(0, 0), bem(Z), dk(N, S)),
-    SENSE("Sense", INFANTERIEWAFFEN, tp(3), tpKK(13, 4), 100, 160, 7, -2, 30, wm(-2, -4), bem(I, Z), dk(S)),
-    STURMSENSE("Sturmsense", INFANTERIEWAFFEN, tp(4), tpKK(13, 3), 120, 180, 5, -1, 40, wm(-1, -2), bem(Z), dk(S)),
-    WARUNKER_HAMMER("Warunker Hammer", INFANTERIEWAFFEN, tp(6), tpKK(14, 3), 150, 150, 2, -1, 150, wm(0, -1), bem(Z), dk(N, S)),
-    WURMSPIESS("Wurmspieß", INFANTERIEWAFFEN, tp(5), tpKK(13, 4), 120, 180, 2, 0, 120, wm(0, -2), bem(Z), dk(S)),
+    GLEFE("Glefe", INFANTERIEWAFFEN, tp(4), tpKK(13, 3), 120, 200, 5, -1, 45, wm(0, -2), bem(z), dk(S)),
+    HAKENSPIESS("Hakenspieß", INFANTERIEWAFFEN, tp(3), tpKK(13, 4), 120, 250, 5, 0, 70, wm(-1, -1), bem(z), dk(S)),
+    HELLEBARDE("Hellebarde", INFANTERIEWAFFEN, tp(5), tpKK(12, 3), 150, 200, 5, 0, 75, wm(0, -1), bem(z), dk(S)),
+    KORSPIESS("Korspieß", INFANTERIEWAFFEN, tp(2, 2), tpKK(12, 3), 140, 180, 3, 0, 200, wm(0, -1), bem(z, p), dk(S)),
+    NEETHANER_LANGAXT("Neethaner Langaxt", INFANTERIEWAFFEN, tp(2, 2), tpKK(13, 4), 160, 180, 5, -1, 160, wm(-1, -3), bem(z), dk(S)),
+    PAILOS("Pailos", INFANTERIEWAFFEN, tp(2, 4), tpKK(14, 2), 180, 175, 3, -2, 300, wm(-1, -3), bem(z), dk(S)),
+    PARTISANE("Partisane", INFANTERIEWAFFEN, tp(5), tpKK(13, 3), 150, 200, 4, 0, 80, wm(0, -2), bem(z), dk(S)),
+    SCHNITTER("Schnitter", INFANTERIEWAFFEN, tp(5), tpKK(14, 4), 90, 130, 4, 0, 120, wm(0, 0), bem(z), dk(N, S)),
+    SENSE("Sense", INFANTERIEWAFFEN, tp(3), tpKK(13, 4), 100, 160, 7, -2, 30, wm(-2, -4), bem(i, z), dk(S)),
+    STURMSENSE("Sturmsense", INFANTERIEWAFFEN, tp(4), tpKK(13, 3), 120, 180, 5, -1, 40, wm(-1, -2), bem(z), dk(S)),
+    WARUNKER_HAMMER("Warunker Hammer", INFANTERIEWAFFEN, tp(6), tpKK(14, 3), 150, 150, 2, -1, 150, wm(0, -1), bem(z), dk(N, S)),
+    WURMSPIESS("Wurmspieß", INFANTERIEWAFFEN, tp(5), tpKK(13, 4), 120, 180, 2, 0, 120, wm(0, -2), bem(z), dk(S)),
 
     // Kettenstäbe
-    DREIGLIEDERSTAB("DREIGLIEDERSTAB", KETTENSTAEBE, tp(2), tpKK(13, 4), 100, 130, 3, 2, 180, wm(1, 1), bem(Z), dk(H, N)),
-    KETTENSTAB("Kettenstab", KETTENSTAEBE, tp(2), tpKK(13, 4), 100, 120, 2, 2, 120, wm(1, 0), bem(Z), dk(H, N)),
+    DREIGLIEDERSTAB("DREIGLIEDERSTAB", KETTENSTAEBE, tp(2), tpKK(13, 4), 100, 130, 3, 2, 180, wm(1, 1), bem(z), dk(H, N)),
+    KETTENSTAB("Kettenstab", KETTENSTAEBE, tp(2), tpKK(13, 4), 100, 120, 2, 2, 120, wm(1, 0), bem(z), dk(H, N)),
 
     // Kettenwaffen
     GEISSEL("Geißel", KETTENWAFFEN, tp(-1), tpKK(14, 5), 30, 100, 5, -1, 15, wm(0, -4), bem(), dk(N)),
@@ -112,7 +112,7 @@ public enum Waffe {
     AMAZONENSAEBEL("Amazonensäbel", SAEBEL_TECHNIK, tp(4), tpKK(11, 4), 75, 100, 2, 1, 180, wm(0, 0), bem(), dk(N)),
     ARBACH("Arbach", SAEBEL_TECHNIK, tp(4), tpKK(12, 3), 100, 90, 2, 0, 120, wm(0, -1), bem(), dk(N)),
     ENTERMESSER("Entermesser", SAEBEL_TECHNIK, tp(3), tpKK(12, 4), 70, 75, 2, 0, 50, wm(0, 0), bem(), dk(N)),
-    HAUMESSER_SAEBEL("Haumesser (als Säbel)", SAEBEL_TECHNIK, tp(3), tpKK(13, 3), 90, 50, 3, -1, 40, wm(0, -2), bem(I), dk(H, N)),
+    HAUMESSER_SAEBEL("Haumesser (als Säbel)", SAEBEL_TECHNIK, tp(3), tpKK(13, 3), 90, 50, 3, -1, 40, wm(0, -2), bem(i), dk(H, N)),
     KHUNCHOMER("Khunchomer", SAEBEL_TECHNIK, tp(4), tpKK(12, 3), 90, 80, 2, 0, 130, wm(0, 0), bem(), dk(N)),
     KURZSCHWERT_SAEBEL("Kurzschwert (als Säbel)", SAEBEL_TECHNIK, tp(2), tpKK(11, 4), 40, 50, 1, 0, 80, wm(0, -1), bem(), dk(H, N)),
     KUSLIKER_SAEBEL("Kusliker Säbel", SAEBEL_TECHNIK, tp(3), tpKK(12, 4), 70, 80, 1, 1, 160, wm(0, 0), bem(), dk(N)),
@@ -131,12 +131,83 @@ public enum Waffe {
     KURZSCHWERT_SCHWERT("Kurzschwert (als Schwert)", SCHWERTER, tp(2), tpKK(11, 3), 40, 50, 1, 0, 80, wm(0, -1), bem(), dk(H, N)),
     KUSLIKER_SAEBEL_SCHWERT("Kusliker Säbel (als Schwert)", SCHWERTER, tp(3), tpKK(12, 4), 70, 80, 1, 1, 160, wm(0, 0), bem(), dk(N)),
     NACHWIND_SCHWERT("Nachtwind (als Schwert)", SCHWERTER, tp(4), tpKK(11, 5), 70, 100, 0, 2, 500, wm(0, 0), bem(), dk(N)),
+    RAPIER_SCHWERT("Rapier (als Schwert)", SCHWERTER, tp(3), tpKK(12, 4), 45, 90, 2, 1, 120, wm(0, 0), bem(), dk(N)),
+    ROBBENTOETER_SCHWERT("Robbentöter (als Schwert)", SCHWERTER, tp(3), tpKK(12, 4), 70, 90, 2, 0, 200, wm(0, 0), bem(), dk(N)),
+    SAEBEL_SCHWERT("Säbel (als Schwert)", SCHWERTER, tp(3), tpKK(12, 4), 60, 90, 2, 1, 100, wm(0, 0), bem(), dk(N)),
+    SCHWERT("Schwert", SCHWERTER, tp(4), tpKK(11, 4), 80, 95, 1, 0, 180, wm(0, 0), bem(), dk(N)),
+    TURNIERSCHWERT("Turnierschwert (auf AU)", SCHWERTER, tp(3), tpKK(11, 5), 60, 80, 3, 0, 80, wm(0, 0), bem(), dk(N)),
+    WOLFSMESSER_SCHWERT("Wolfsmesser (als Schwert)", SCHWERTER, tp(3), tpKK(12, 4), 50, 90, 1, 1, 250, wm(0, 0), bem(), dk(N)),
 
     // Speere
+
+    DRACHENTOETER("Drachentöter", SPEERE, tp(3, 5), tpKK(20, 1), 400, 400, 3, -3, 0, wm(-2, -4), bem(z), dk(Distanzklasse.P)),
+    DREIZACK("Dreizack", SPEERE, tp(4), tpKK(13, 3), 90, 140, 5, 0, 50, wm(0, -1), bem(i), dk(S)),
+    DSCHADRA("Dschadra", SPEERE, tp(5), tpKK(12, 4), 80, 200, 6, -1, 120, wm(0, -3), bem(), dk(S)),
+    EFFERDBART("Efferdbart", SPEERE, tp(4), tpKK(13, 3), 90, 120, 3, 0, 80, wm(0, -1), bem(w), dk(N, S)),
+    HOLZSPEER("Holzspeer", SPEERE, tp(3), tpKK(12, 5), 60, 150, 5, 0, 10, wm(-1, -3), bem(z, w), dk(S)),
+    JAGDSPIESS("Jagspieß", SPEERE, tp(6), tpKK(12, 4), 80, 200, 3, -1, 80, wm(0, -1), bem(z, w), dk(S)),
+    KORSPIESS_SPEER("Korspieß (als Speer)", SPEERE, tp(2, 2), tpKK(12, 3), 140, 180, 3, 0, 200, wm(0, -1), bem(z, p), dk(S)),
+    KRIEGSLANZE("Kriegslanze", SPEERE, tp(3), tpKK(12, 5), 150, 300, 5, -2, 120, wm(-2, -4), bem(z, i_), dk(P)),
+    PARTISANE_SPEER("Partisane (als Speer)", SPEERE, tp(5), tpKK(13, 3), 150, 200, 4, 0, 80, wm(0, -2), bem(z), dk(S)),
+    PIKE("Pike", SPEERE, tp(5), tpKK(14, 4), 180, 350, 6, -2, 50, wm(-1, -2), bem(z), dk(P)),
+    SCHNITTER_SPEER("Schnitter (als Speer)", SPEERE, tp(5), tpKK(14, 4), 90, 130, 4, 0, 120, wm(0, 0), bem(z), dk(N, S)),
+    SPEER("Speer", SPEERE, tp(5), tpKK(12, 4), 80, 190, 5, -1, 30, wm(0, -2), bem(z, w), dk(S)),
+    STOSSSPEER("Stoßspeer", SPEERE, tp(2, 2), tpKK(11, 4), 150, 200, 3, -1, 100, wm(0, -1), bem(z), dk(S)),
+    TUNIERLANZE("Turnierlanze (auf AU)", SPEERE, tp(2), tpKK(12, 5), 120, 300, 8, -2, 50, wm(-2, -4), bem(z, i_), dk(P)),
+    WURFSPEER_SPEER("Wurfspeer (als Speer)", SPEERE, tp(3), tpKK(11, 5), 80, 100, 4, -2, 30, wm(-1, -3), bem(w, i_), dk(N)),
+    WURMSPIESS_SPEER("Wurmspieß (als Speer)", SPEERE, tp(5), tpKK(13, 4), 120, 180, 2, 0, 120, wm(0, -2), bem(z), dk(S)),
+
     // Stäbe
+
+    KAMPFSTAB("Kampfstab", STAEBE, tp(1), tpKK(12, 4), 80, 150, 5, 1, 40, wm(0, 0), bem(z), dk(N, S)),
+    MAGIERSTAB("Magierstab", STAEBE, tp(1), tpKK(11, 5), 90, 150, 0, 0, 0, wm(-1, -1), bem(z, p), dk(N, S)),
+    ZWEILILIEN("Zweililien", STAEBE, tp(3), tpKK(12, 4), 80, 140, 4, 1, 200, wm(1, -1), bem(z), dk(N)),
+
+    // Zweihandflegel
+
+    DRESCHFLEGEL("Dreschflegel", ZWEIHANDFLEGEL, tp(3), tpKK(12, 3), 100, 150, 6, -2, 15, wm(-2, -3), bem(i, z), dk(S)),
+    KRIEGSFLEGEL("Kriegsflegel", ZWEIHANDFLEGEL, tp(6), tpKK(12, 2), 120, 150, 5, -1, 50, wm(-1, -2), bem(z), dk(S)),
+
     // Zweihand-Hiebwaffen
+
+    BABARENSTREITAXT("Barbarenstreitaxt", ZWEIHANDHIEBWAFFEN, tp(3, 2), tpKK(15, 1), 250, 120, 3, -2, 150, wm(-1, -4), bem(z), dk(N)),
+    ECHSISCHE_AXT("Echsische Axt", ZWEIHANDHIEBWAFFEN, tp(5), tpKK(12, 4), 90, 150, 3, 0, 0, wm(0, -1), bem(z), dk(N, S)),
+    FELSSPALTER("Felsspalter", ZWEIHANDHIEBWAFFEN, tp(2, 2), tpKK(14, 2), 150, 120, 2, -1, 300, wm(0, -2), bem(z), dk(N)),
+    GRUUFHAI("Gruufhai", ZWEIHANDHIEBWAFFEN, tp(6), tpKK(14, 2), 180, 120, 3, -2, 120, wm(-1, -3), bem(z), dk(N)),
+    HOLZFAELLERAXT("Holzfälleraxt", ZWEIHANDHIEBWAFFEN, tp(2, 0), tpKK(12, 2), 160, 110, 5, -2, 80, wm(-1, -4), bem(i, z), dk(N)),
+    KRIEGSHAMMER("Kriegshammer", ZWEIHANDHIEBWAFFEN, tp(2, 3), tpKK(14, 2), 180, 100, 2, -2, 120, wm(-1, -3), bem(z), dk(N)),
+    NEETHANER_LANGAXT_ZWEIHANDHIEBWAFFE("Neethaner Langaxt (als Zweihandhiebwaffe)", ZWEIHANDHIEBWAFFEN, tp(2, 2), tpKK(13, 2), 160, 180, 5, -2, 160, wm(-1, -3), bem(z), dk(S)),
+    ORKNASE_ZWEIHANDHIEBWAFFE("Orknase (als Zweihandhiebwaffe)", ZWEIHANDHIEBWAFFEN, tp(5), tpKK(12, 2), 110, 100, 4, -1, 75, wm(0, -1), bem(z), dk(N)),
+    PAILOS_ZWEIHANDHIEBWAFFE("Pailos (als Zweihandhiebwaffe)", ZWEIHANDHIEBWAFFEN, tp(2, 4), tpKK(14, 2), 180, 175, 3, -2, 300, wm(-1, -3), bem(z), dk(S)),
+    SCHNITTER_ZWEIHANDHIEBWAFFE("Schnitter (als Zweihandhiebwaffe)", ZWEIHANDHIEBWAFFEN, tp(5), tpKK(14, 4), 90, 130, 4, 0, 120, wm(0, 0), bem(z), dk(N, S)),
+    SPITZHACKE("Spitzhacke", ZWEIHANDHIEBWAFFEN, tp(6), tpKK(13, 2), 200, 100, 5, -3, 20, wm(-2, -4), bem(z, i), dk(N)),
+    VORSCHLAGHAMMER("Vorschlaghammer", ZWEIHANDHIEBWAFFEN, tp(5), tpKK(13, 2), 250, 90, 5, -3, 30, wm(-2, -4), bem(i, z), dk(N)),
+    WARUNKER_HAMMER_ZWEIHANDHIEBWAFFE("Warunker Hammer (als Zweihandhiebwaffe)", ZWEIHANDHIEBWAFFEN, tp(6), tpKK(14, 3), 150, 150, 2, -1, 150, wm(0, -1), bem(z), dk(N, S)),
+    ZWERGENSCHLAEGEL("Zwergenschlägel", ZWEIHANDHIEBWAFFEN, tp(5), tpKK(13, 3), 120, 120, 1, -1, 150, wm(0, -1), bem(z), dk(N)),
+
     // Zweihandschwerter / -Säbel
+
+    ANDERGASTER("Andergaster", ZWEIHANDSCHWERTER_SAEBEL, tp(3, 2), tpKK(14, 2), 220, 200, 3, -3, 350, wm(0, -2), bem(z), dk(S)),
+    ANDERTHALBHAENDER_ZWEIHANDSCHWERT("Anderthalbhänder", ZWEIHANDSCHWERTER_SAEBEL, tp(5), tpKK(11, 4), 100, 115, 1, 1, 250, wm(0, 0), bem(z), dk(N, S)),
+    BORONSSICHEL("Boronssichel", ZWEIHANDSCHWERTER_SAEBEL, tp(2, 6), tpKK(13, 3), 160, 180, 3, -2, 400, wm(0, -3), bem(z), dk(S)),
+    DOPPELKHUNCHOMER("Doppelkhunchomer", ZWEIHANDSCHWERTER_SAEBEL, tp(6), tpKK(12, 2), 150, 130, 2, -1, 250, wm(0, -1), bem(z), dk(N, S)),
+    GROSSER_SKLAVENTOD("Großer Sklaventod", ZWEIHANDSCHWERTER_SAEBEL, tp(2, 4), tpKK(13, 2), 160, 140, 3, -2, 350, wm(0, -2), bem(z), dk(N, S)),
+    RICHTSCHWERT("Richtschwert", ZWEIHANDSCHWERTER_SAEBEL, tp(3, 4), tpKK(13, 2), 200, 130, 5, -3, 0, wm(-2, -4), bem(i, z, p), dk(N)),
+    RONDRAKAMM_ZWEIHANDSCHWERT("Rondrakamm (als Zweihandschwert)", ZWEIHANDSCHWERTER_SAEBEL, tp(2, 2), tpKK(12, 3), 130, 130, 1, 0, 0, wm(0, 0), bem(z, p), dk(N, S)),
+    TUZAKMESSER_ZWEIHANDSAEBEL("Tuzakmesser (als Zweihandsäbel)", ZWEIHANDSCHWERTER_SAEBEL, tp(6), tpKK(12, 4), 100, 130, 1, 1, 400, wm(0, 0), bem(z), dk(N, S)),
+    ZWEIHAENDER("Zweihänder", ZWEIHANDSCHWERTER_SAEBEL, tp(2, 4), tpKK(12, 3), 160, 155, 2, -1, 250, wm(0, -1), bem(z, p), dk(N, S)),
+
     // Handgemenge-Wafffen (Raufen)
+
+    FAUSTHIEB("Fausthieb (auf AU)", RAUFEN, tp(0), tpKK(10, 3), 0, 0, 0, -1, 0, wm(-1, -2), bem(), dk(H)),
+    TRITT_KOPFSTOSS("Tritt / Kopfstoss (auf AU)", RAUFEN, tp(0), tpKK(10, 3), 0, 0, 0, -1, 0, wm(-1, -2), bem(), dk(H)),
+    DRACHENKLAUE("Drachenklaue", RAUFEN, tp(2), tpKK(12, 3), 200, 20, 0, -1, 350, wm(0, 0), bem(), dk(H)),
+    VETERANENHAND("Veteranenhand", RAUFEN, tp(2), tpKK(12, 4), 70, 0, 4, -1, 250, wm(0, -1), bem(), dk(H)),
+    SCHLAGRING("Schlagring (auf AU)", RAUFEN, tp(2), tpKK(10, 3), 20, 0, 0, 0, 25, wm(-1, -2), bem(), dk(H)),
+    ORCHIDEE("Orchidee", RAUFEN, tp(1), tpKK(12, 5), 35, 0, 3, 0, 180, wm(-1, -2), bem(), dk(H)),
+    PANZERARM("Panzerarm", RAUFEN, tp(2), tpKK(11, 3), 220, 20, -2, -1, 140, wm(0, 0), bem(), dk(H)),
+    BOCK("Bock", RAUFEN, tp(2), tpKK(10, 5), 120, 20, 0, -1, 80, wm(0, 0), bem(), dk(H)),
+    STOSS_MIT_SCHILD("Stoß mit Schild (auf AU)", RAUFEN, tp(1), tpKK(13, 3), 0, 0, 0, 0, 0, wm(-0, 0), bem(i), dk(H)),
 
     // **** SCHUSS- UND WURFWAFFEN
     // Blasrohr
@@ -150,11 +221,11 @@ public enum Waffe {
     WURFSCHEIBE_RING("Wurfscheibe, -ring", WURFMESSER_TECHNIK, tp(1), reichweiten(2, 4, 8, 12, 20).tp(1, 0, 0, 0, 0), 10, 0, 35),
 
     // Wurfspeere
-    DSCHADRA("Dschadra", WURFSPEERE, tp(4), reichweiten(5, 10, 15, 25, 40).tp(3, 2, 1, 0, 0), 80, 0, 120),
-    EFFERDBART("Efferdbart", WURFSPEERE, tp(3), reichweiten(3, 6, 10, 15, 25).tp(2, 1, 0, -1, -2), 90, 0, 80),
+    DSCHADRA_WURFSPEER("Dschadra (als Wurfspeer)", WURFSPEERE, tp(4), reichweiten(5, 10, 15, 25, 40).tp(3, 2, 1, 0, 0), 80, 0, 120),
+    EFFERDBART_WURFSPEER("Efferdbart (als Wurfspeer)", WURFSPEERE, tp(3), reichweiten(3, 6, 10, 15, 25).tp(2, 1, 0, -1, -2), 90, 0, 80),
     GRANATAPFEL("Granatapfel", WURFSPEERE, tp(4, 0), reichweiten(0, 5, 10, 15, 20).tp(0, 0, 0, 0, 0), 40, 0, 0),
-    HOLZSPEER("Holzspeer", WURFSPEERE, tp(2), reichweiten(5, 10, 15, 25, 40).tp(1, 0, 0, -1, -2), 60, 0, 10),
-    SPEER("Speer", WURFSPEERE, tp(3), reichweiten(5, 10, 15, 25, 40).tp(1, 0, 0, -1, -2), 80, 0, 30),
+    HOLZSPEER_WURFSPEER("Holzspeer (als Wurfspeer)", WURFSPEERE, tp(2), reichweiten(5, 10, 15, 25, 40).tp(1, 0, 0, -1, -2), 60, 0, 10),
+    SPEER_WURFSPEER("Speer (als Wurfspeer)", WURFSPEERE, tp(3), reichweiten(5, 10, 15, 25, 40).tp(1, 0, 0, -1, -2), 80, 0, 30),
     SPEERSCHLEUDER("Speerschleuder", WURFSPEERE, tp(3), reichweiten(15, 30, 60, 100).tp(1, 0, 0, -1), 90, 2, 40),
     STAABSCHLEUDER("Staabschleuder", WURFSPEERE, tp(3), reichweiten(5, 20, 40, 60).tp(0, 0, 0, 0), 43, 2, 15),
     WURFSPEER("Wurfspeer", WURFSPEERE, tp(4), reichweiten(5, 10, 15, 25, 40).tp(3, 1, 0, -1, -1), 80, 0, 30),
@@ -300,6 +371,9 @@ public enum Waffe {
         return preisST;
     }
 
+    public int getLadenAktionen() {
+        return ladenAktionen;
+    }
     public WaffeBemerkungen getBemerkungen() {
         return bemerkungen;
     }
@@ -307,4 +381,5 @@ public enum Waffe {
     public Waffenmodifikation getWaffenmodifikation() {
         return waffenmodifikation;
     }
+
 }

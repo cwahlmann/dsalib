@@ -4,7 +4,8 @@ public enum Distanzklasse {
     H("Handgemenge"),
     N("Nahkampf"),
     S("Speer"),
-    F("Fernkampf")
+    F("Fernkampf"),
+    P("Pike")
     ;
     private String bezeichnung;
 
