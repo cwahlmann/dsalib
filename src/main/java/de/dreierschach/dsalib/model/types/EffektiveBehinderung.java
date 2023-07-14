@@ -30,4 +30,15 @@ public class EffektiveBehinderung {
     public int getEBE(int be) {
         return be * faktor + bonus;
     }
+
+    public String toString() {
+        var result = new StringBuilder("BE");
+        if (faktor > 1) {
+            result.append("x").append(faktor);
+        }
+        if (bonus != 0) {
+            result.append(String.format("%+d", bonus));
+        }
+        return result.toString();
+    }
 }

@@ -1,40 +1,45 @@
 package de.dreierschach.dsalib.model;
 
 import de.dreierschach.dsalib.model.types.Eigenschaft;
+import de.dreierschach.dsalib.model.types.Eigenschaftswert;
 
-import java.util.Map;
-import java.util.function.Function;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Eigenschaften {
-    private final Map<Eigenschaft, Integer> werte;
-    private final Map<Eigenschaft, Integer> modifikatoren;
+    private final List<Eigenschaftswert> werte;
+    private Eigenschaft leitEigenschaft;
 
     public Eigenschaften() {
-        werte = Stream.of(Eigenschaft.values()).collect(Collectors.toMap(Function.identity(), e -> 0));
-        modifikatoren = Stream.of(Eigenschaft.values()).collect(Collectors.toMap(Function.identity(), e -> 0));
+        werte = Stream.of(Eigenschaft.values()).map(e ->
+                        new Eigenschaftswert()
+                                .withEigenschaft(e)
+                                .withStart(0))
+                .collect(Collectors.toList());
     }
 
-    public int getStart(Eigenschaft e) {
-        return werte.get(e);
+    public Stream<Eigenschaftswert> getWerte() {
+        return werte.stream();
     }
 
-    public Eigenschaften withStart(Eigenschaft e, int wert) {
-        this.werte.put(e, wert);
+    public Eigenschaftswert getWert(Eigenschaft eigenschaft) {
+        return werte.stream().filter(wert -> wert.getEigenschaft() == eigenschaft).findAny().orElseThrow();
+    }
+
+    public Eigenschaften withStart(Eigenschaft eigenschaft, int start) {
+        werte.stream().filter(wert -> wert.getEigenschaft() == eigenschaft).findAny().ifPresent(
+                eigenschaftswert -> eigenschaftswert.withStart(start)
+        );
         return this;
     }
-
-    public int getModifikator(Eigenschaft e) {
-        return modifikatoren.get(e);
+    
+    public Eigenschaft getLeitEigenschaft() {
+        return leitEigenschaft;
     }
 
-    public Eigenschaften withModifikator(Eigenschaft e, int wert) {
-        this.modifikatoren.put(e, wert);
+    public Eigenschaften withLeitEigenschaft(Eigenschaft leitEigenschaft) {
+        this.leitEigenschaft = leitEigenschaft;
         return this;
-    }
-
-    public int getAktuell(Eigenschaft e) {
-        return werte.get(e) + modifikatoren.get(e);
     }
 }

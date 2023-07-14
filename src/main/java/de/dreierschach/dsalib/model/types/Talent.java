@@ -41,7 +41,7 @@ public enum Talent {
     SCHRIFTLICHER_AUSDRUCK("Schriftlicher Ausdruck", GESELLSCHAFT, probe(KL, IN, IN), SPEZIAL),
     SICH_VERKLEIDEN("Sich Verkleiden", GESELLSCHAFT, probe(MU, CH, GE), SPEZIAL),
     UEBERREDEN("Überreden", GESELLSCHAFT, probe(MU, IN, CH), BASIS),
-    UEBERZEUGEN("Überzeugen", GESELLSCHAFT, probe(KL,IN, CH), SPEZIAL),
+    UEBERZEUGEN("Überzeugen", GESELLSCHAFT, probe(KL, IN, CH), SPEZIAL),
 
     // Natur
     FAEHRTENSUCHEN("Fährtensuchen", NATUR, probe(KL, IN, IN), probe(KL, IN, KO), BASIS),
@@ -55,9 +55,9 @@ public enum Talent {
     // Wissen
     ANATOMIE("Anatomie", WISSEN, probe(MU, KL, FF), SPEZIAL),
     BAUKUNST("Baukunst", WISSEN, probe(KL, KL, FF), SPEZIAL),
-    BRETTSPIEL("Brettspiel", WISSEN, probe(KL,KL,IN),SPEZIAL),
-    GEOGRAPHIE("Geographie", WISSEN, probe(KL,KL,IN), SPEZIAL),
-    GESCHICHTSWISSEN("Geschichtswissen", WISSEN, probe(KL,KL,IN), SPEZIAL),
+    BRETTSPIEL("Brettspiel", WISSEN, probe(KL, KL, IN), SPEZIAL),
+    GEOGRAPHIE("Geographie", WISSEN, probe(KL, KL, IN), SPEZIAL),
+    GESCHICHTSWISSEN("Geschichtswissen", WISSEN, probe(KL, KL, IN), SPEZIAL),
     GESTEINSKUNDE("Gesteinskunde", WISSEN, probe(KL, IN, FF), SPEZIAL),
     GOETTER_KULTE("Götter / Kulte", WISSEN, probe(KL, KL, IN), SPEZIAL),
     HERALDIK("Heraldik", WISSEN, probe(KL, KL, FF), SPEZIAL),
@@ -75,6 +75,7 @@ public enum Talent {
     SPRACHENKUNDE("Sprachenkunde", WISSEN, probe(KL, KL, IN), SPEZIAL),
     STAATSKUNST("Staatskunst", WISSEN, probe(KL, IN, CH), SPEZIAL),
     STERNKUNDE("Sternkunde", WISSEN, probe(KL, KL, IN), SPEZIAL),
+    TIERKUNDE("Tierkunde", WISSEN, probe(MU, KL, IN), SPEZIAL),
 
     // Handwerk
     ABRICHTEN("Abrichten", HANDWERK, probe(MU, IN, CH), SPEZIAL),

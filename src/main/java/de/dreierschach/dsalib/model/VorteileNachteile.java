@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class VorteileNachteile {
     private final Map<Vorteil, Integer> vorteile;
@@ -34,5 +35,13 @@ public class VorteileNachteile {
     public VorteileNachteile withNachteil(Nachteil nachteil, int grad) {
         nachteile.put(nachteil, grad);
         return this;
+    }
+
+    public Stream<Vorteil> getVorteile() {
+        return vorteile.keySet().stream();
+    }
+
+    public Stream<Nachteil> getNachteile() {
+        return nachteile.keySet().stream();
     }
 }

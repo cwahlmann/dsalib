@@ -1,5 +1,6 @@
 package de.dreierschach.dsalib.model;
 
+import de.dreierschach.dsalib.model.types.Augenfarbe;
 import de.dreierschach.dsalib.model.types.*;
 
 public class Grundeigenschaften {
@@ -14,6 +15,7 @@ public class Grundeigenschaften {
     private Haarfarbe haarfarbe;
     private Augenfarbe augenfarbe;
     private String aussehen;
+    private Stand stand;
     private Titel titel;
     private int sozialstatus;
     private String hintergrund;
@@ -114,6 +116,15 @@ public class Grundeigenschaften {
 
     public Grundeigenschaften withAussehen(String aussehen) {
         this.aussehen = aussehen;
+        return this;
+    }
+
+    public Stand getStand() {
+        return stand;
+    }
+
+    public Grundeigenschaften withStand(Stand stand) {
+        this.stand = stand;
         return this;
     }
 

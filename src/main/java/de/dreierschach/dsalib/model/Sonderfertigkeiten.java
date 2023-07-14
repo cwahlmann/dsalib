@@ -4,9 +4,10 @@ import de.dreierschach.dsalib.model.types.Sonderfertigkeit;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class Sonderfertigkeiten {
-    private Set<Sonderfertigkeit> sonderfertigkeiten;
+    private final Set<Sonderfertigkeit> sonderfertigkeiten;
 
     public Sonderfertigkeiten() {
         this.sonderfertigkeiten = new HashSet<>();
@@ -20,4 +21,9 @@ public class Sonderfertigkeiten {
         sonderfertigkeiten.add(sonderfertigkeit);
         return this;
     }
+
+    public Stream<Sonderfertigkeit> getSonderfertigkeiten() {
+        return sonderfertigkeiten.stream();
+    }
+
 }
